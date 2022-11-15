@@ -1,40 +1,44 @@
 package com.example.kt1_2050531200101_nguyentienan;
 
 public class singer {
-    private String tenbai;
-    private String tacgia;
-    private String infor;
+    private String ten;
+    private String nghedanh;
+    private String sosao;
     private int img;
 
-    public singer(String tenbai, String tacgia, String infor, int img) {
-        this.tenbai = tenbai;
-        this.tacgia = tacgia;
-        this.infor = infor;
+    public singer() {
+    }
+
+    public singer(String ten, String nghedanh, String sosao, int img) {
+        this.ten = ten;
+        this.nghedanh = nghedanh;
+        this.sosao = sosao;
         this.img = img;
     }
 
-    public String getTenbai() {
-        return tenbai;
+
+    public String getTen() {
+        return ten;
     }
 
-    public void setTenbai(String tenbai) {
-        this.tenbai = tenbai;
+    public void setTen(String ten) {
+        this.ten = ten;
     }
 
-    public String getTacgia() {
-        return tacgia;
+    public String getNghedanh() {
+        return nghedanh;
     }
 
-    public void setTacgia(String tacgia) {
-        this.tacgia = tacgia;
+    public void setNghedanh(String nghedanh) {
+        this.nghedanh = nghedanh;
     }
 
-    public String getInfor() {
-        return infor;
+    public String getSosao() {
+        return sosao;
     }
 
-    public void setInfor(String infor) {
-        this.infor = infor;
+    public void setSosao(String sosao) {
+        this.sosao = sosao;
     }
 
     public int getImg() {
@@ -45,3 +49,5 @@ public class singer {
         this.img = img;
     }
 }
+
+

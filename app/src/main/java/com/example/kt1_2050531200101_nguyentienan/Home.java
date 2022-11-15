@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Home extends AppCompatActivity {
-    private ImageButton imgBtSearch;
     private RecyclerView rcvSong;
     private Adapter songAdapter;
 
@@ -30,14 +29,15 @@ public class Home extends AppCompatActivity {
 
         rcvSong = findViewById(R.id.listsong);
         songAdapter = new Adapter(this);
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         rcvSong.setLayoutManager(linearLayoutManager);
+
         songAdapter.setData(getlistSong());
         rcvSong.setAdapter(songAdapter);
 
 
     }
-
     private List<singer> getlistSong() {
         List<singer> list = new ArrayList<>();
         list.add((new singer("Nguyễn Thanh Tùng", "Son Tung Mtp", "5 sao", R.drawable.anh1_1)));
@@ -47,8 +47,6 @@ public class Home extends AppCompatActivity {
         list.add((new singer("Phạm Lưu Tuấn Tài", "Issac", "5 sao", R.drawable.issac)));
         list.add((new singer("Trịnh Trần Phương Tuấn", "Jack 5 củ", "1 sao", R.drawable.jack)));
         return list;
-
-
     }
 
 }

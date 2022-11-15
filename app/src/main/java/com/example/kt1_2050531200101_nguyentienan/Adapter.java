@@ -15,6 +15,7 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.SongViewHoder> {
 
     private Context mContext;
+
     private List<singer> mListSong;
 
     public Adapter(Context mContext) {
@@ -28,7 +29,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.SongViewHoder> {
     @NonNull
     @Override
     public SongViewHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()) .inflate(R.layout.item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);
         return new SongViewHoder(view);
     }
 
@@ -39,9 +40,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.SongViewHoder> {
             return;
         }
         holder.imgSong.setImageResource(music.getImg());
-        holder.songName.setText(music.getTenbai());
-        holder.i4Song.setText(music.getInfor());
-        holder.ctgory.setText(music.getTacgia());
+        holder.songName.setText(music.getTen());
+        holder.i4Song.setText(music.getNghedanh());
+        holder.ctgory.setText(music.getSosao());
 
     }
 
